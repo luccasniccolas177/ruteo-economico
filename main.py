@@ -10,9 +10,9 @@ ETL_PIPELINE = [
     ("metadata/vehiculos/scraper-chileautos.py", "Extrayendo datos de vehículos (Scraping)"),
     ("metadata/vehiculos/transform_vehiculos.py", "Transformando datos de vehículos"),
     ("metadata/vehiculos/load_vehiculos.py", "Cargando vehículos a la BD"),
-    ("metadata/combustibles/extract_combustibles.py", "Extrayendo datos crudos de combustibles"),
-    ("metadata/combustibles/transform_combustibles.py", "Transformando datos de combustibles"),
-    ("metadata/combustibles/load_combustibles.py", "Cargando combustibles a la BD"),
+    ("metadata/combustible/extract_combustibles.py", "Extrayendo datos crudos de combustibles"),
+    ("metadata/combustible/transform_combustibles.py", "Transformando datos de combustibles"),
+    ("metadata/combustible/load_combustibles.py", "Cargando combustibles a la BD"),
     ("metadata/peajes/transform_peajes.py", "Transformando y mapeando datos de peajes"),
     ("metadata/peajes/load_peajes.py", "Cargando peajes a la BD"),
     # --- AMENAZAS ---
