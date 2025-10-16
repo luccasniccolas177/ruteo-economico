@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  db:
+    image: pgrouting/pgrouting:16-3.5-develop
+    container_name: ruteo-db
+    environment:
+      POSTGRES_DB: ruteo
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: hola123
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      # Ejecuta el schema.sql para crear tablas y habilitar extensiones al inicio
+      - ./database/schema.sql:/docker-entrypoint-initdb.d/init.sql
+
+  app:
+    build: .
+    container_name: ruteo-app
+    depends_on:
+      - db
+    volumes:
+      - .:/app
+    ports:
+      - "5001:5001"
+    # El archivo .env se usa para configurar la app
+    env_file:
+      - .env
+
+volumes:
+  pgdata:
