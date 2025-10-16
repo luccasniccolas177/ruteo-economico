@@ -4375,6 +4375,58 @@
         }
     },
     {
+        "modelo_base": "2025 Volkswagen Tiguan",
+        "version": "1.4 TSI DSG Comfortline 7A",
+        "especificaciones_clave": {
+            "consumo_mixto_kml": 11.9,
+            "consumo_urbano_kml": 9.0,
+            "consumo_extraurbano_kml": 14.7,
+            "capacidad_estanque_litros": 58.0,
+            "motor_litros": 1.4,
+            "transmision": "Automática",
+            "traccion": "delantera"
+        }
+    },
+    {
+        "modelo_base": "2025 Volkswagen Tiguan",
+        "version": "1.4 TSI DSG Highline 7A",
+        "especificaciones_clave": {
+            "consumo_mixto_kml": 11.9,
+            "consumo_urbano_kml": 9.0,
+            "consumo_extraurbano_kml": 14.7,
+            "capacidad_estanque_litros": 58.0,
+            "motor_litros": 1.4,
+            "transmision": "Automática",
+            "traccion": "delantera"
+        }
+    },
+    {
+        "modelo_base": "2024 Volkswagen Tiguan",
+        "version": "2.0 TSI DSG R-Line Black Ed. 7A 4Motion",
+        "especificaciones_clave": {
+            "consumo_mixto_kml": 11.0,
+            "consumo_urbano_kml": 8.9,
+            "consumo_extraurbano_kml": 12.7,
+            "capacidad_estanque_litros": 58.0,
+            "motor_litros": 2.0,
+            "transmision": "Automática",
+            "traccion": "4x4"
+        }
+    },
+    {
+        "modelo_base": "2025 Volkswagen Tiguan",
+        "version": "2.0 TSI DSG R-Line 7A 4Motion",
+        "especificaciones_clave": {
+            "consumo_mixto_kml": 11.0,
+            "consumo_urbano_kml": 8.9,
+            "consumo_extraurbano_kml": 12.7,
+            "capacidad_estanque_litros": 58.0,
+            "motor_litros": 2.0,
+            "transmision": "Automática",
+            "traccion": "4x4"
+        }
+    },
+    {
         "modelo_base": "2025 SKODA Fabia",
         "version": "1.0 110 HP Ambition",
         "especificaciones_clave": {

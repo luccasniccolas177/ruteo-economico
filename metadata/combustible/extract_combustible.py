@@ -2,25 +2,30 @@ import requests
 import json
 from datetime import datetime
 import os
-import getpass
+from dotenv import load_dotenv
 
 
 class RawExtractorCombustibleCNE:
     """
-    Clase dedicada únicamente a la EXTRACCIÓN de datos crudos de la API de la CNE.
-    Obtiene un token y guarda la respuesta de la API directamente en un archivo JSON,
-    sin aplicar ninguna transformación.
+    Clase dedicada a la EXTRACCIÓN de datos crudos de la API de la CNE.
+    Obtiene el email y la contraseña desde el archivo .env, solicita un token
+    y guarda la respuesta de la API directamente en un archivo JSON.
     """
 
-    def __init__(self, email, password):
-        if not email or not password:
-            raise ValueError("El email y la contraseña no pueden estar vacíos.")
+    def __init__(self):
+        """
+        Inicializa el extractor cargando las credenciales desde el archivo .env.
+        """
+        load_dotenv()  # Carga las variables de entorno del archivo .env
 
-        self.email = email
-        self.password = password
+        self.email = os.getenv("CNE_EMAIL")
+        self.password = os.getenv("CNE_PASSWORD")
+
+        if not self.email or not self.password:
+            raise ValueError("Las variables CNE_EMAIL y CNE_PASSWORD no están definidas en el archivo .env.")
+
         self.token = None
         self.output_dir = os.path.dirname(os.path.realpath(__file__))
-
         self.url_login = "https://api.cne.cl/api/login"
         self.url_estaciones_base = "https://api.cne.cl/api/v4/estaciones"
         self.headers = {'Accept': 'application/json', 'User-Agent': 'RuteoEconomico-Extractor/1.0'}
@@ -31,12 +36,10 @@ class RawExtractorCombustibleCNE:
         """
         print("Solicitando token de autenticación a la CNE...")
         payload = {"email": self.email, "password": self.password}
-
         try:
             response = requests.post(self.url_login, json=payload, headers=self.headers)
             response.raise_for_status()
             data = response.json()
-
             if 'token' in data:
                 self.token = data['token']
                 print("Token obtenido exitosamente.")
@@ -44,11 +47,11 @@ class RawExtractorCombustibleCNE:
             else:
                 print(f"Error: La respuesta de login no contenía un token. Respuesta: {data}")
                 return False
-
         except requests.exceptions.HTTPError as e:
-            print(f"Error HTTP al obtener el token: {e.response.status_code} {e.response.reason}")
             if e.response.status_code == 401:
-                print("-> Causa probable: Email o contraseña incorrectos.")
+                print("-> ERROR CRÍTICO: Email o contraseña incorrectos en el archivo .env.")
+            else:
+                print(f"Error HTTP al obtener el token: {e.response.status_code} {e.response.reason}")
             return False
         except (requests.exceptions.RequestException, json.JSONDecodeError) as e:
             print(f"Error crítico de conexión o formato al obtener el token: {e}")
@@ -61,15 +64,12 @@ class RawExtractorCombustibleCNE:
         if not self.token:
             print("Error: No hay token disponible para realizar la solicitud.")
             return None
-
         print("Conectando con la API para descargar datos crudos de estaciones...")
         url_con_token = f"{self.url_estaciones_base}?token={self.token}"
-
         try:
-            respuesta = requests.get(url_con_token, headers=self.headers, timeout=60)  # Timeout de 60s
+            respuesta = requests.get(url_con_token, headers=self.headers, timeout=60)
             respuesta.raise_for_status()
             datos_json = respuesta.json()
-
             if isinstance(datos_json, list):
                 print(f"Datos crudos recibidos. Se encontraron {len(datos_json)} registros.")
                 return datos_json
@@ -87,7 +87,6 @@ class RawExtractorCombustibleCNE:
         timestamp_str = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
         filename_json = f"raw_combustibles_{timestamp_str}.json"
         filepath_json = os.path.join(self.output_dir, filename_json)
-
         try:
             with open(filepath_json, 'w', encoding='utf-8') as f:
                 json.dump(datos_crudos, f, ensure_ascii=False, indent=2)
@@ -103,31 +102,20 @@ class RawExtractorCombustibleCNE:
         """
         if not self.obtener_token_cne():
             return None
-
         datos_crudos = self.extraer_datos_crudos()
-
         if datos_crudos:
             return self.guardar_datos_crudos(datos_crudos)
-
         return None
 
 
 if __name__ == "__main__":
-    EMAIL_CNE = "lucas.araya_t@mail.udp.cl"
-
-    print("--- Proceso de EXTRACCIÓN CRUDA de Metadata de Combustibles ---")
-
+    print("--- Proceso de EXTRACCIÓN CRUDA de Metadata de Combustibles (Automatizado) ---")
     try:
-        password_cne = getpass.getpass(f"Ingresa tu contraseña para el usuario '{EMAIL_CNE}': ")
-
-        if not password_cne:
-            print("No se ingresó una contraseña. Abortando.")
+        extractor = RawExtractorCombustibleCNE()  # Ya no necesita argumentos
+        if extractor.ejecutar():
+            print("\nProceso de extracción finalizado con éxito.")
         else:
-            extractor = RawExtractorCombustibleCNE(email=EMAIL_CNE, password=password_cne)
-            if extractor.ejecutar():
-                print("\nProceso de extracción finalizado con éxito.")
-            else:
-                print("\nEl proceso de extracción falló.")
-
+            print("\nEl proceso de extracción falló.")
     except Exception as e:
+        # Captura errores de inicialización (ej. si faltan las variables en .env)
         print(f"Ha ocurrido un error inesperado durante la ejecución: {e}")
