@@ -1,0 +1,88 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "generado": "2025-10-15T22:50:03.013313"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "sismo",
+        "fuente": "CSN",
+        "fecha_local": "2025-10-15 20:49:58",
+        "magnitud": 3.5,
+        "profundidad_km": 110.0,
+        "referencia_geografica": "115 km al SE de Copiapó",
+        "url_detalle": "https://www.sismologia.cl/sismicidad/informes/2025/10/321808.html",
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -69.42,
+          -28.01
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "sismo",
+        "fuente": "CSN",
+        "fecha_local": "2025-10-15 19:12:09",
+        "magnitud": 4.0,
+        "profundidad_km": 50.0,
+        "referencia_geografica": "42 km al NE de Punta de Choros",
+        "url_detalle": "https://www.sismologia.cl/sismicidad/informes/2025/10/321803.html",
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.14,
+          -29.0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "sismo",
+        "fuente": "CSN",
+        "fecha_local": "2025-10-15 10:37:41",
+        "magnitud": 4.2,
+        "profundidad_km": 72.0,
+        "referencia_geografica": "39 km al NE de Copiapó",
+        "url_detalle": "https://www.sismologia.cl/sismicidad/informes/2025/10/321739.html",
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.1,
+          -27.08
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "sismo",
+        "fuente": "CSN",
+        "fecha_local": "2025-10-15 09:27:30",
+        "magnitud": 3.6,
+        "profundidad_km": 34.0,
+        "referencia_geografica": "15 km al NO de Punitaqui",
+        "url_detalle": "https://www.sismologia.cl/sismicidad/informes/2025/10/321716.html",
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.38,
+          -30.75
+        ]
+      }
+    }
+  ]
+}

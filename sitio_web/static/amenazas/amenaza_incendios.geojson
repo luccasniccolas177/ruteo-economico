@@ -1,0 +1,3265 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "generado": "2025-10-16T00:26:53.187767",
+    "fuente_datos": "https://raw.githubusercontent.com/deigeprif/public/refs/heads/main/reporte/incendios.csv",
+    "descripcion": "Incendios forestales de la temporada actual reportados por CONAF."
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "BOTACURA",
+        "estado": "Extinguido",
+        "comuna": "San Javier",
+        "region": "Maule",
+        "fecha_inicio_utc": "2025-07-02T22:26:00+00:00",
+        "superficie_ha": 0.01,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.92916870117188,
+          -35.630001068115234
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "CALLE OHIGGINS",
+        "estado": "Extinguido",
+        "comuna": "Calera",
+        "region": "Valparaíso",
+        "fecha_inicio_utc": "2025-07-07T15:57:00+00:00",
+        "superficie_ha": 0.03,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.22805786132812,
+          -32.78972244262695
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "HUANTA KM 6",
+        "estado": "Extinguido",
+        "comuna": "Arica",
+        "region": "Arica y Parinacota",
+        "fecha_inicio_utc": "2025-07-08T11:00:00+00:00",
+        "superficie_ha": 2.6,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.04389953613281,
+          -18.407852172851562
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "VIñA INSITU",
+        "estado": "Extinguido",
+        "comuna": "San Esteban",
+        "region": "Valparaíso",
+        "fecha_inicio_utc": "2025-07-08T11:40:00+00:00",
+        "superficie_ha": 0.1,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.5831527709961,
+          -32.83330154418945
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "EL TURCO",
+        "estado": "Extinguido",
+        "comuna": "Cartagena",
+        "region": "Valparaíso",
+        "fecha_inicio_utc": "2025-07-08T17:00:00+00:00",
+        "superficie_ha": 0.01,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.4782485961914,
+          -33.54902648925781
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "LOMA BLANCA GONZALEZ",
+        "estado": "Extinguido",
+        "comuna": "Curepto",
+        "region": "Maule",
+        "fecha_inicio_utc": "2025-07-12T07:38:00+00:00",
+        "superficie_ha": 1.6,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.98388671875,
+          -35.28138732910156
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "CERRO VENTANA",
+        "estado": "Extinguido",
+        "comuna": "Las Cabras",
+        "region": "O'Higgins",
+        "fecha_inicio_utc": "2025-07-12T13:35:00+00:00",
+        "superficie_ha": 8.98,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.07969665527344,
+          -34.198917388916016
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "CASAS VIEJAS TAGLE",
+        "estado": "Extinguido",
+        "comuna": "Río Claro",
+        "region": "Maule",
+        "fecha_inicio_utc": "2025-07-14T08:10:00+00:00",
+        "superficie_ha": 1.7,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.1935806274414,
+          -35.30683517456055
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "JUNQUILLAR PART.",
+        "estado": "Extinguido",
+        "comuna": "Angol",
+        "region": "La Araucanía",
+        "fecha_inicio_utc": "2025-07-14T22:01:00+00:00",
+        "superficie_ha": 0.15,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.75444793701172,
+          -37.78361129760742
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "LO CHACON",
+        "estado": "Extinguido",
+        "comuna": "El Monte",
+        "region": "Metropolitana",
+        "fecha_inicio_utc": "2025-07-17T11:55:00+00:00",
+        "superficie_ha": 0.01,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.01944732666016,
+          -33.70277786254883
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "COQUIMBO",
+        "estado": "Extinguido",
+        "comuna": "Lampa",
+        "region": "Metropolitana",
+        "fecha_inicio_utc": "2025-07-17T15:06:00+00:00",
+        "superficie_ha": 6.0,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.7844467163086,
+          -33.20166778564453
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "MANQUECUEL",
+        "estado": "Extinguido",
+        "comuna": "Mulchén",
+        "region": "Biobío",
+        "fecha_inicio_utc": "2025-07-17T19:44:00+00:00",
+        "superficie_ha": 0.7,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.16677856445312,
+          -37.732582092285156
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "IPLA",
+        "estado": "Extinguido",
+        "comuna": "Pozo Almonte",
+        "region": "Tarapacá",
+        "fecha_inicio_utc": "2025-07-22T00:30:00+00:00",
+        "superficie_ha": 0.13,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -69.21556854248047,
+          -20.074562072753906
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "LAS CLARILLANAS",
+        "estado": "Extinguido",
+        "comuna": "Pirque",
+        "region": "Metropolitana",
+        "fecha_inicio_utc": "2025-07-22T11:40:00+00:00",
+        "superficie_ha": 0.01,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.5947494506836,
+          -33.68030548095703
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "CANADA",
+        "estado": "Extinguido",
+        "comuna": "Hualqui",
+        "region": "Biobío",
+        "fecha_inicio_utc": "2025-07-23T17:12:00+00:00",
+        "superficie_ha": 0.01,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.83658599853516,
+          -36.982887268066406
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "PARQUE COLL",
+        "estado": "Extinguido",
+        "comuna": "La Serena",
+        "region": "Coquimbo",
+        "fecha_inicio_utc": "2025-07-25T14:40:00+00:00",
+        "superficie_ha": 0.2,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.23110961914062,
+          -29.913610458374023
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "ENLACE LAGUNILLAS",
+        "estado": "Extinguido",
+        "comuna": "Casablanca",
+        "region": "Valparaíso",
+        "fecha_inicio_utc": "2025-07-25T15:15:00+00:00",
+        "superficie_ha": 8.35,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.45325469970703,
+          -33.38711929321289
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "TRES ROBLES CHAIMAVIDA",
+        "estado": "Extinguido",
+        "comuna": "Cauquenes",
+        "region": "Maule",
+        "fecha_inicio_utc": "2025-07-26T14:10:00+00:00",
+        "superficie_ha": 0.02,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.15361022949219,
+          -35.9275016784668
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "SAN JOSé DEL ALTO",
+        "estado": "Extinguido",
+        "comuna": "Retiro",
+        "region": "Maule",
+        "fecha_inicio_utc": "2025-07-29T17:31:00+00:00",
+        "superficie_ha": 0.04,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.9413070678711,
+          -35.90361022949219
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "FUNDO NICOLAO",
+        "estado": "Extinguido",
+        "comuna": "Santo Domingo",
+        "region": "Valparaíso",
+        "fecha_inicio_utc": "2025-07-29T19:20:00+00:00",
+        "superficie_ha": 2.27,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.80186462402344,
+          -33.83402633666992
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "OCAC",
+        "estado": "Extinguido",
+        "comuna": "Isla de Pascua",
+        "region": "Valparaíso Insular",
+        "fecha_inicio_utc": "2025-07-30T15:30:00+00:00",
+        "superficie_ha": 0.5,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -109.30438995361328,
+          -27.102699279785156
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "RAFAEL ZORRAINDO",
+        "estado": "Extinguido",
+        "comuna": "Copiapó",
+        "region": "Atacama",
+        "fecha_inicio_utc": "2025-08-04T13:35:00+00:00",
+        "superficie_ha": 0.17,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.29679870605469,
+          -27.398555755615234
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "LO CASTRO",
+        "estado": "Extinguido",
+        "comuna": "Lampa",
+        "region": "Metropolitana",
+        "fecha_inicio_utc": "2025-08-12T13:36:00+00:00",
+        "superficie_ha": 0.01,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.78244018554688,
+          -33.295555114746094
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "EL AGUILUCHO (PARTICULAR)",
+        "estado": "Extinguido",
+        "comuna": "Curepto",
+        "region": "Maule",
+        "fecha_inicio_utc": "2025-08-13T19:38:00+00:00",
+        "superficie_ha": 1.1,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.0169448852539,
+          -35.171390533447266
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "LOS COIGUES 1",
+        "estado": "Extinguido",
+        "comuna": "Tomé",
+        "region": "Biobío",
+        "fecha_inicio_utc": "2025-08-14T12:35:00+00:00",
+        "superficie_ha": 0.28,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.90694427490234,
+          -36.739444732666016
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "MARIA JOSE (PARTICULAR)",
+        "estado": "Extinguido",
+        "comuna": "Constitución",
+        "region": "Maule",
+        "fecha_inicio_utc": "2025-08-14T14:06:00+00:00",
+        "superficie_ha": 0.5,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.49222564697266,
+          -35.39694595336914
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "QUESQUECHAN",
+        "estado": "Extinguido",
+        "comuna": "Loncoche",
+        "region": "La Araucanía",
+        "fecha_inicio_utc": "2025-08-18T16:17:00+00:00",
+        "superficie_ha": 0.2,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.55754852294922,
+          -39.2810173034668
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "CAICUNES R. RALCO",
+        "estado": "Extinguido",
+        "comuna": "Alto Biobío",
+        "region": "Biobío",
+        "fecha_inicio_utc": "2025-08-18T17:25:00+00:00",
+        "superficie_ha": 6.18,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.37357330322266,
+          -37.94163131713867
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "LOLEN",
+        "estado": "Extinguido",
+        "comuna": "Freire",
+        "region": "La Araucanía",
+        "fecha_inicio_utc": "2025-08-29T19:30:00+00:00",
+        "superficie_ha": 0.01,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.7397232055664,
+          -38.97833251953125
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "LA LOMA (PARTICULAR)",
+        "estado": "Extinguido",
+        "comuna": "Quilleco",
+        "region": "Biobío",
+        "fecha_inicio_utc": "2025-08-31T00:36:00+00:00",
+        "superficie_ha": 0.14,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.80615234375,
+          -37.50035095214844
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "EL TABANO",
+        "estado": "Extinguido",
+        "comuna": "Puerto Montt",
+        "region": "Los Lagos",
+        "fecha_inicio_utc": "2025-08-31T19:45:00+00:00",
+        "superficie_ha": 0.71,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.90389251708984,
+          -41.434444427490234
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "PUENTE PUANGUE",
+        "estado": "Extinguido",
+        "comuna": "Melipilla",
+        "region": "Metropolitana",
+        "fecha_inicio_utc": "2025-09-02T11:30:00+00:00",
+        "superficie_ha": 0.01,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.3199462890625,
+          -33.65238952636719
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "LOS SEPÚLVEDA",
+        "estado": "Extinguido",
+        "comuna": "Castro",
+        "region": "Los Lagos",
+        "fecha_inicio_utc": "2025-09-04T12:10:00+00:00",
+        "superficie_ha": 0.2,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.71441650390625,
+          -42.417301177978516
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "BELLAVISTA (VUELO)",
+        "estado": "Extinguido",
+        "comuna": "Mulchén",
+        "region": "Biobío",
+        "fecha_inicio_utc": "2025-09-04T13:31:00+00:00",
+        "superficie_ha": 0.07,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.19611358642578,
+          -37.81972122192383
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "LA RESERVA",
+        "estado": "Extinguido",
+        "comuna": "Castro",
+        "region": "Los Lagos",
+        "fecha_inicio_utc": "2025-09-04T15:00:00+00:00",
+        "superficie_ha": 0.02,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.72669219970703,
+          -42.37929153442383
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "TEJAS VERDES 1",
+        "estado": "Extinguido",
+        "comuna": "Coyhaique",
+        "region": "Aysén",
+        "fecha_inicio_utc": "2025-09-04T16:22:00+00:00",
+        "superficie_ha": 0.01,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.01918029785156,
+          -45.56306076049805
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "KM 374 SAN CARLOS",
+        "estado": "Extinguido",
+        "comuna": "San Carlos",
+        "region": "Ñuble",
+        "fecha_inicio_utc": "2025-09-04T16:26:00+00:00",
+        "superficie_ha": 13.9,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.94055938720703,
+          -36.407779693603516
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "CHAÑIHUE",
+        "estado": "Extinguido",
+        "comuna": "Castro",
+        "region": "Los Lagos",
+        "fecha_inicio_utc": "2025-09-04T17:00:00+00:00",
+        "superficie_ha": 0.05,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.73564147949219,
+          -42.499027252197266
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "LA CAPILLA ISLA TENGLO",
+        "estado": "Extinguido",
+        "comuna": "Puerto Montt",
+        "region": "Los Lagos",
+        "fecha_inicio_utc": "2025-09-05T14:32:00+00:00",
+        "superficie_ha": 0.15,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.9800033569336,
+          -41.50361251831055
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "LO ECHEVERS",
+        "estado": "Extinguido",
+        "comuna": "Quilicura",
+        "region": "Metropolitana",
+        "fecha_inicio_utc": "2025-09-05T16:27:00+00:00",
+        "superficie_ha": 1.5,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.7972183227539,
+          -33.34333419799805
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "GA-PLAYA NEGRA",
+        "estado": "Extinguido",
+        "comuna": "Penco",
+        "region": "Biobío",
+        "fecha_inicio_utc": "2025-09-05T19:34:00+00:00",
+        "superficie_ha": 0.03,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.01249694824219,
+          -36.75555419921875
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "SAN JERONIMO",
+        "estado": "Extinguido",
+        "comuna": "Loncoche",
+        "region": "La Araucanía",
+        "fecha_inicio_utc": "2025-09-05T19:36:00+00:00",
+        "superficie_ha": 0.02,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.61111450195312,
+          -39.364166259765625
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "LA LEONERA (PARTICULAR)",
+        "estado": "Extinguido",
+        "comuna": "Curepto",
+        "region": "Maule",
+        "fecha_inicio_utc": "2025-09-06T21:05:00+00:00",
+        "superficie_ha": 1.0,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.9705581665039,
+          -35.2852783203125
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "3036 - MAHUIDANCHI Y OTROS",
+        "estado": "Extinguido",
+        "comuna": "Pitrufquén",
+        "region": "La Araucanía",
+        "fecha_inicio_utc": "2025-09-06T21:09:00+00:00",
+        "superficie_ha": 0.01,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.93787384033203,
+          -39.09255599975586
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "BUEN AMIGO",
+        "estado": "Extinguido",
+        "comuna": "Río Ibáñez",
+        "region": "Aysén",
+        "fecha_inicio_utc": "2025-09-07T15:10:00+00:00",
+        "superficie_ha": 0.4,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.06153869628906,
+          -46.213340759277344
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "FUNDO NICOLAO 2",
+        "estado": "Extinguido",
+        "comuna": "Santo Domingo",
+        "region": "Valparaíso",
+        "fecha_inicio_utc": "2025-09-08T09:26:00+00:00",
+        "superficie_ha": 4.1,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.79480743408203,
+          -33.842193603515625
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "HUANTA KM 4 08-09-2025",
+        "estado": "Extinguido",
+        "comuna": "Arica",
+        "region": "Arica y Parinacota",
+        "fecha_inicio_utc": "2025-09-08T14:00:00+00:00",
+        "superficie_ha": 2.0,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.0510025024414,
+          -18.419370651245117
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "FUNDO NICOLAO 3",
+        "estado": "Extinguido",
+        "comuna": "Santo Domingo",
+        "region": "Valparaíso",
+        "fecha_inicio_utc": "2025-09-08T14:33:00+00:00",
+        "superficie_ha": 0.02,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.7985610961914,
+          -33.83266067504883
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "ROMOLHUE",
+        "estado": "Extinguido",
+        "comuna": "Cholchol",
+        "region": "La Araucanía",
+        "fecha_inicio_utc": "2025-09-08T15:25:00+00:00",
+        "superficie_ha": 0.1,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.8861083984375,
+          -38.57805633544922
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "QUINTRILPE ALTO",
+        "estado": "Extinguido",
+        "comuna": "Vilcún",
+        "region": "La Araucanía",
+        "fecha_inicio_utc": "2025-09-08T19:50:00+00:00",
+        "superficie_ha": 0.2,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.37194061279297,
+          -38.63833236694336
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "QUEBRADA LA PAULA",
+        "estado": "Extinguido",
+        "comuna": "Machalí",
+        "region": "O'Higgins",
+        "fecha_inicio_utc": "2025-09-09T14:20:00+00:00",
+        "superficie_ha": 4.5,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.5347671508789,
+          -34.161991119384766
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "SECTOR PUTANI",
+        "estado": "Extinguido",
+        "comuna": "General Lagos",
+        "region": "Arica y Parinacota",
+        "fecha_inicio_utc": "2025-09-09T14:30:00+00:00",
+        "superficie_ha": 53.0,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -69.54158020019531,
+          -17.751279830932617
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "CAMINO CEMENTERIO",
+        "estado": "Extinguido",
+        "comuna": "Quilicura",
+        "region": "Metropolitana",
+        "fecha_inicio_utc": "2025-09-09T14:51:00+00:00",
+        "superficie_ha": 0.1,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.73833465576172,
+          -33.37694549560547
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "CORONEL",
+        "estado": "Extinguido",
+        "comuna": "Paine",
+        "region": "Metropolitana",
+        "fecha_inicio_utc": "2025-09-09T15:49:00+00:00",
+        "superficie_ha": 0.07,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.72888946533203,
+          -33.80888748168945
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "TRES CRUCES BAJO",
+        "estado": "Extinguido",
+        "comuna": "Paiguano",
+        "region": "Coquimbo",
+        "fecha_inicio_utc": "2025-09-09T15:57:00+00:00",
+        "superficie_ha": 7.0,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.5352783203125,
+          -29.997028350830078
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "LA PATAGUILLA PC.43 B (PARTICULAR)",
+        "estado": "Extinguido",
+        "comuna": "Río Claro",
+        "region": "Maule",
+        "fecha_inicio_utc": "2025-09-09T16:55:00+00:00",
+        "superficie_ha": 0.4,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.17709350585938,
+          -35.29621505737305
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "CANCAN",
+        "estado": "Extinguido",
+        "comuna": "Cunco",
+        "region": "La Araucanía",
+        "fecha_inicio_utc": "2025-09-12T19:20:00+00:00",
+        "superficie_ha": 0.01,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.92916870117188,
+          -38.93574142456055
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "BAHIA JARA",
+        "estado": "Extinguido",
+        "comuna": "Chile Chico",
+        "region": "Aysén",
+        "fecha_inicio_utc": "2025-09-12T19:20:00+00:00",
+        "superficie_ha": 0.01,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.8499755859375,
+          -46.563846588134766
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "LAS ANTENAS",
+        "estado": "Extinguido",
+        "comuna": "Puerto Montt",
+        "region": "Los Lagos",
+        "fecha_inicio_utc": "2025-09-15T11:40:00+00:00",
+        "superficie_ha": 1.5,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.98855590820312,
+          -41.512306213378906
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "LOS SAUCES P",
+        "estado": "Extinguido",
+        "comuna": "Los Sauces",
+        "region": "La Araucanía",
+        "fecha_inicio_utc": "2025-09-15T17:00:00+00:00",
+        "superficie_ha": 0.1,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.84139251708984,
+          -37.99361038208008
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "LONCOYAN",
+        "estado": "Extinguido",
+        "comuna": "Purén",
+        "region": "La Araucanía",
+        "fecha_inicio_utc": "2025-09-15T17:44:00+00:00",
+        "superficie_ha": 0.01,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.9782943725586,
+          -38.09666061401367
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "CONUNHUENO",
+        "estado": "Extinguido",
+        "comuna": "Padre Las Casas",
+        "region": "La Araucanía",
+        "fecha_inicio_utc": "2025-09-15T20:22:00+00:00",
+        "superficie_ha": 4.07,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.58171844482422,
+          -38.75331497192383
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "RINCONADA DE NAVARRO",
+        "estado": "Extinguido",
+        "comuna": "Chépica",
+        "region": "O'Higgins",
+        "fecha_inicio_utc": "2025-09-16T08:27:00+00:00",
+        "superficie_ha": 0.05,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.22235870361328,
+          -34.78947067260742
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "FLOR DEL LLANO",
+        "estado": "Extinguido",
+        "comuna": "San Clemente",
+        "region": "Maule",
+        "fecha_inicio_utc": "2025-09-16T14:09:00+00:00",
+        "superficie_ha": 1.7,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.538330078125,
+          -35.50030517578125
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "CHAñAR BLANCO",
+        "estado": "Extinguido",
+        "comuna": "Paiguano",
+        "region": "Coquimbo",
+        "fecha_inicio_utc": "2025-09-17T14:00:00+00:00",
+        "superficie_ha": 5.0,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.51203155517578,
+          -30.037694931030273
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "PROLONGACIÓN IGNACIO CARRERA PINTO",
+        "estado": "Extinguido",
+        "comuna": "Punta Arenas",
+        "region": "Magallanes",
+        "fecha_inicio_utc": "2025-09-17T15:00:00+00:00",
+        "superficie_ha": 0.43,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.94329833984375,
+          -53.148616790771484
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "HUECHUN",
+        "estado": "Extinguido",
+        "comuna": "Melipilla",
+        "region": "Metropolitana",
+        "fecha_inicio_utc": "2025-09-17T15:42:00+00:00",
+        "superficie_ha": 0.01,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.33833312988281,
+          -33.721221923828125
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "LOLEN BAJO",
+        "estado": "Extinguido",
+        "comuna": "Freire",
+        "region": "La Araucanía",
+        "fecha_inicio_utc": "2025-09-17T18:45:00+00:00",
+        "superficie_ha": 0.1,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.71741485595703,
+          -38.97186279296875
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "LA ESPERANZA Y OTROS",
+        "estado": "Extinguido",
+        "comuna": "Cholchol",
+        "region": "La Araucanía",
+        "fecha_inicio_utc": "2025-09-17T19:58:00+00:00",
+        "superficie_ha": 0.58,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.9366683959961,
+          -38.511112213134766
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "LA VINILLA",
+        "estado": "Extinguido",
+        "comuna": "Casablanca",
+        "region": "Valparaíso",
+        "fecha_inicio_utc": "2025-09-18T10:36:00+00:00",
+        "superficie_ha": 0.08,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.31527709960938,
+          -33.34722137451172
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "SN ONOFRE",
+        "estado": "Extinguido",
+        "comuna": "Hualqui",
+        "region": "Biobío",
+        "fecha_inicio_utc": "2025-09-18T18:23:00+00:00",
+        "superficie_ha": 0.01,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.88809967041016,
+          -37.01057815551758
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "CASAS VIEJAS TAGLE",
+        "estado": "Extinguido",
+        "comuna": "Río Claro",
+        "region": "Maule",
+        "fecha_inicio_utc": "2025-09-19T17:24:00+00:00",
+        "superficie_ha": 0.01,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.20833587646484,
+          -35.293888092041016
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "AROMO TABALI",
+        "estado": "Extinguido",
+        "comuna": "Ovalle",
+        "region": "Coquimbo",
+        "fecha_inicio_utc": "2025-09-21T16:45:00+00:00",
+        "superficie_ha": 1.0,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.40721893310547,
+          -30.626083374023438
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "EL MAITENAL",
+        "estado": "Extinguido",
+        "comuna": "Río Ibáñez",
+        "region": "Aysén",
+        "fecha_inicio_utc": "2025-09-23T20:58:00+00:00",
+        "superficie_ha": 35.0,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.98802185058594,
+          -46.2922477722168
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "DAMAS",
+        "estado": "Extinguido",
+        "comuna": "Carahue",
+        "region": "La Araucanía",
+        "fecha_inicio_utc": "2025-09-24T16:12:00+00:00",
+        "superficie_ha": 0.01,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.12999725341797,
+          -38.67277908325195
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "LOS SILOS",
+        "estado": "Extinguido",
+        "comuna": "Las Cabras",
+        "region": "O'Higgins",
+        "fecha_inicio_utc": "2025-09-24T16:42:00+00:00",
+        "superficie_ha": 0.15,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.29203033447266,
+          -34.22480773925781
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "CANELILLOS",
+        "estado": "Extinguido",
+        "comuna": "Pelluhue",
+        "region": "Maule",
+        "fecha_inicio_utc": "2025-09-24T19:03:00+00:00",
+        "superficie_ha": 0.6,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.65972137451172,
+          -35.982582092285156
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "PEOR ES NADA",
+        "estado": "Extinguido",
+        "comuna": "Chimbarongo",
+        "region": "O'Higgins",
+        "fecha_inicio_utc": "2025-09-25T13:50:00+00:00",
+        "superficie_ha": 0.1,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.04499816894531,
+          -34.77897262573242
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "SAN PABLO",
+        "estado": "Extinguido",
+        "comuna": "Parral",
+        "region": "Maule",
+        "fecha_inicio_utc": "2025-09-25T14:16:00+00:00",
+        "superficie_ha": 0.6,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.79438781738281,
+          -36.15833282470703
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "BOYECO",
+        "estado": "Extinguido",
+        "comuna": "Temuco",
+        "region": "La Araucanía",
+        "fecha_inicio_utc": "2025-09-25T14:29:00+00:00",
+        "superficie_ha": 0.01,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.62472534179688,
+          -38.6844596862793
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "CHUFQUEN",
+        "estado": "Extinguido",
+        "comuna": "Traiguén",
+        "region": "La Araucanía",
+        "fecha_inicio_utc": "2025-09-25T14:30:00+00:00",
+        "superficie_ha": 1.25,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.68930053710938,
+          -38.374298095703125
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "DUMO",
+        "estado": "Extinguido",
+        "comuna": "Victoria",
+        "region": "La Araucanía",
+        "fecha_inicio_utc": "2025-09-25T15:14:00+00:00",
+        "superficie_ha": 0.01,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.30783081054688,
+          -38.1574592590332
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "PELAL",
+        "estado": "Extinguido",
+        "comuna": "Freire",
+        "region": "La Araucanía",
+        "fecha_inicio_utc": "2025-09-25T16:30:00+00:00",
+        "superficie_ha": 0.01,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.71366882324219,
+          -38.867942810058594
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "LONCOYAN 2",
+        "estado": "Extinguido",
+        "comuna": "Purén",
+        "region": "La Araucanía",
+        "fecha_inicio_utc": "2025-09-25T16:36:00+00:00",
+        "superficie_ha": 3.0,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.98479461669922,
+          -38.10100173950195
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "POLUL",
+        "estado": "Extinguido",
+        "comuna": "Pitrufquén",
+        "region": "La Araucanía",
+        "fecha_inicio_utc": "2025-09-25T17:55:00+00:00",
+        "superficie_ha": 0.2,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.38555908203125,
+          -39.182498931884766
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "TIL TIL",
+        "estado": "Extinguido",
+        "comuna": "Pitrufquén",
+        "region": "La Araucanía",
+        "fecha_inicio_utc": "2025-09-25T20:15:00+00:00",
+        "superficie_ha": 0.15,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.59707641601562,
+          -39.0090217590332
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "HUERTO 182, CAMINO 2",
+        "estado": "Extinguido",
+        "comuna": "Natales",
+        "region": "Magallanes",
+        "fecha_inicio_utc": "2025-09-26T14:55:00+00:00",
+        "superficie_ha": 0.11,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.50527954101562,
+          -51.69194412231445
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "SECTOR PLANTA REVISIÓN TECNICA",
+        "estado": "Extinguido",
+        "comuna": "Natales",
+        "region": "Magallanes",
+        "fecha_inicio_utc": "2025-09-27T11:29:00+00:00",
+        "superficie_ha": 0.83,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.45816802978516,
+          -51.70719909667969
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "LAS ÁNIMAS",
+        "estado": "Extinguido",
+        "comuna": "Pica",
+        "region": "Tarapacá",
+        "fecha_inicio_utc": "2025-09-28T06:50:00+00:00",
+        "superficie_ha": 0.02,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -69.32445526123047,
+          -20.49175453186035
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "QUEBRADA EL LITRE",
+        "estado": "Extinguido",
+        "comuna": "Las Cabras",
+        "region": "O'Higgins",
+        "fecha_inicio_utc": "2025-09-28T12:35:00+00:00",
+        "superficie_ha": 0.01,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.1854476928711,
+          -34.25175094604492
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "SANTA LUISA",
+        "estado": "Extinguido",
+        "comuna": "Cauquenes",
+        "region": "Maule",
+        "fecha_inicio_utc": "2025-09-28T14:19:00+00:00",
+        "superficie_ha": 0.26,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.17805480957031,
+          -36.067222595214844
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "QUILLAGUASA",
+        "estado": "Extinguido",
+        "comuna": "Huara",
+        "region": "Tarapacá",
+        "fecha_inicio_utc": "2025-09-29T09:30:00+00:00",
+        "superficie_ha": 7.5,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -69.4968032836914,
+          -19.91301155090332
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "SANTA PATRICIA",
+        "estado": "Extinguido",
+        "comuna": "Pencahue",
+        "region": "Maule",
+        "fecha_inicio_utc": "2025-09-29T12:17:00+00:00",
+        "superficie_ha": 0.8,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.69047546386719,
+          -35.35391616821289
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "EL GOMERO (PARTICULAR)",
+        "estado": "Extinguido",
+        "comuna": "Quirihue",
+        "region": "Ñuble",
+        "fecha_inicio_utc": "2025-09-29T15:55:00+00:00",
+        "superficie_ha": 0.27,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.62772369384766,
+          -36.32474899291992
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "LABRANZA",
+        "estado": "Extinguido",
+        "comuna": "Temuco",
+        "region": "La Araucanía",
+        "fecha_inicio_utc": "2025-09-29T18:30:00+00:00",
+        "superficie_ha": 0.1,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.774169921875,
+          -38.75666809082031
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "STA CATALINA (PARTICULAR)",
+        "estado": "Extinguido",
+        "comuna": "Constitución",
+        "region": "Maule",
+        "fecha_inicio_utc": "2025-09-29T21:06:00+00:00",
+        "superficie_ha": 0.25,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.17472076416016,
+          -35.530555725097656
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "CAMINO A CODIHUE KM5",
+        "estado": "Extinguido",
+        "comuna": "Padre Las Casas",
+        "region": "La Araucanía",
+        "fecha_inicio_utc": "2025-09-30T14:02:00+00:00",
+        "superficie_ha": 1.0,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.57635498046875,
+          -38.835052490234375
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "LOTE B VILLA MARIA-CBB",
+        "estado": "Extinguido",
+        "comuna": "Cauquenes",
+        "region": "Maule",
+        "fecha_inicio_utc": "2025-09-30T14:57:00+00:00",
+        "superficie_ha": 1.05,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.44400787353516,
+          -35.955936431884766
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "CALLEJON EL ALAMO",
+        "estado": "Extinguido",
+        "comuna": "Temuco",
+        "region": "La Araucanía",
+        "fecha_inicio_utc": "2025-09-30T15:45:00+00:00",
+        "superficie_ha": 0.01,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.76194763183594,
+          -38.75825119018555
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "PALMIRA",
+        "estado": "Extinguido",
+        "comuna": "Talca",
+        "region": "Maule",
+        "fecha_inicio_utc": "2025-09-30T16:56:00+00:00",
+        "superficie_ha": 0.5,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.6294174194336,
+          -35.459083557128906
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "FUNDO LOS ANGELITOS",
+        "estado": "Extinguido",
+        "comuna": "Santo Domingo",
+        "region": "Valparaíso",
+        "fecha_inicio_utc": "2025-09-30T16:58:00+00:00",
+        "superficie_ha": 0.01,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.59494018554688,
+          -33.67211151123047
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "KM 17 RUTA DEL ACIDO",
+        "estado": "Extinguido",
+        "comuna": "Requínoa",
+        "region": "O'Higgins",
+        "fecha_inicio_utc": "2025-09-30T17:00:00+00:00",
+        "superficie_ha": 0.01,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.62333679199219,
+          -34.260276794433594
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "LOS PATOS",
+        "estado": "Extinguido",
+        "comuna": "Florida",
+        "region": "Biobío",
+        "fecha_inicio_utc": "2025-10-01T14:13:00+00:00",
+        "superficie_ha": 0.0,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.6513900756836,
+          -36.75749969482422
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "QUILLEN",
+        "estado": "Extinguido",
+        "comuna": "Lautaro",
+        "region": "La Araucanía",
+        "fecha_inicio_utc": "2025-10-01T14:48:00+00:00",
+        "superficie_ha": 8.0,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.41629791259766,
+          -38.46730041503906
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "LLICO",
+        "estado": "Extinguido",
+        "comuna": "Arauco",
+        "region": "Biobío",
+        "fecha_inicio_utc": "2025-10-01T15:08:00+00:00",
+        "superficie_ha": 0.39,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.55399322509766,
+          -37.2022590637207
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "FUNDO MONTECARLOS",
+        "estado": "Extinguido",
+        "comuna": "Tiltil",
+        "region": "Metropolitana",
+        "fecha_inicio_utc": "2025-10-01T16:13:00+00:00",
+        "superficie_ha": 5.2,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.83922576904297,
+          -33.12905502319336
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "GA-RANCHO CHICO (PARTICULAR)",
+        "estado": "Extinguido",
+        "comuna": "Concepción",
+        "region": "Biobío",
+        "fecha_inicio_utc": "2025-10-01T16:47:00+00:00",
+        "superficie_ha": 0.01,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.8852767944336,
+          -36.926387786865234
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "EL VALLE",
+        "estado": "Extinguido",
+        "comuna": "Ancud",
+        "region": "Los Lagos",
+        "fecha_inicio_utc": "2025-10-01T20:23:00+00:00",
+        "superficie_ha": 0.04,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.70027923583984,
+          -41.85327911376953
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "FUNDO AMANCAY",
+        "estado": "Extinguido",
+        "comuna": "Tiltil",
+        "region": "Metropolitana",
+        "fecha_inicio_utc": "2025-10-02T13:06:00+00:00",
+        "superficie_ha": 0.1,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.91444396972656,
+          -33.13055419921875
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "SAN JOSE",
+        "estado": "Extinguido",
+        "comuna": "Castro",
+        "region": "Los Lagos",
+        "fecha_inicio_utc": "2025-10-02T16:05:00+00:00",
+        "superficie_ha": 0.4,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.68277740478516,
+          -42.44444274902344
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "6105 - LLENQUEHUE PARC 18",
+        "estado": "Extinguido",
+        "comuna": "Cañete",
+        "region": "Biobío",
+        "fecha_inicio_utc": "2025-10-02T20:00:00+00:00",
+        "superficie_ha": 0.05,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.43861389160156,
+          -37.77055740356445
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "LOS LIRIOS PRIETO",
+        "estado": "Extinguido",
+        "comuna": "San Clemente",
+        "region": "Maule",
+        "fecha_inicio_utc": "2025-10-03T10:40:00+00:00",
+        "superficie_ha": 0.37,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.20916748046875,
+          -35.4555549621582
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "FUNDO CAREN",
+        "estado": "Extinguido",
+        "comuna": "Alhué",
+        "region": "Metropolitana",
+        "fecha_inicio_utc": "2025-10-03T14:19:00+00:00",
+        "superficie_ha": 0.02,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.22021484375,
+          -34.0653076171875
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "VARIANTE SAN IGNACIO",
+        "estado": "Extinguido",
+        "comuna": "San Ignacio",
+        "region": "Ñuble",
+        "fecha_inicio_utc": "2025-10-03T16:17:00+00:00",
+        "superficie_ha": 0.01,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.07221984863281,
+          -36.78694534301758
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "SANTA MARIA",
+        "estado": "Extinguido",
+        "comuna": "Melipeuco",
+        "region": "La Araucanía",
+        "fecha_inicio_utc": "2025-10-03T16:20:00+00:00",
+        "superficie_ha": 0.5,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.66722106933594,
+          -38.828609466552734
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "CAMINO EL NATRE",
+        "estado": "Extinguido",
+        "comuna": "Vilcún",
+        "region": "La Araucanía",
+        "fecha_inicio_utc": "2025-10-03T21:18:00+00:00",
+        "superficie_ha": 0.01,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.45333099365234,
+          -38.72111129760742
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "REUMéN",
+        "estado": "Extinguido",
+        "comuna": "Temuco",
+        "region": "La Araucanía",
+        "fecha_inicio_utc": "2025-10-03T21:22:00+00:00",
+        "superficie_ha": 0.01,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.66194152832031,
+          -38.65833282470703
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "DOLLIMO",
+        "estado": "Extinguido",
+        "comuna": "Constitución",
+        "region": "Maule",
+        "fecha_inicio_utc": "2025-10-03T22:55:00+00:00",
+        "superficie_ha": 0.08,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.3102798461914,
+          -35.25361251831055
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "DIEGO BARROS ORTIZ",
+        "estado": "Extinguido",
+        "comuna": "Pudahuel",
+        "region": "Metropolitana",
+        "fecha_inicio_utc": "2025-10-04T15:07:00+00:00",
+        "superficie_ha": 0.15,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.79944610595703,
+          -33.36888885498047
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "COLLIGUAY BAJO",
+        "estado": "Extinguido",
+        "comuna": "Monte Patria",
+        "region": "Coquimbo",
+        "fecha_inicio_utc": "2025-10-04T17:25:00+00:00",
+        "superficie_ha": 9.0,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.7582778930664,
+          -30.850860595703125
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "RINCONADA DE PARRAL",
+        "estado": "Extinguido",
+        "comuna": "Coltauco",
+        "region": "O'Higgins",
+        "fecha_inicio_utc": "2025-10-05T10:14:00+00:00",
+        "superficie_ha": 0.05,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.080322265625,
+          -34.24810028076172
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "ROSALES",
+        "estado": "Extinguido",
+        "comuna": "Quillota",
+        "region": "Valparaíso",
+        "fecha_inicio_utc": "2025-10-05T18:47:00+00:00",
+        "superficie_ha": 0.07,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.25711059570312,
+          -32.872501373291016
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "POBLACION YEVIDE",
+        "estado": "Extinguido",
+        "comuna": "San Felipe",
+        "region": "Valparaíso",
+        "fecha_inicio_utc": "2025-10-06T15:15:00+00:00",
+        "superficie_ha": 0.8,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.74113464355469,
+          -32.75044631958008
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "PAN DE AZUCAR",
+        "estado": "Extinguido",
+        "comuna": "Chillán Viejo",
+        "region": "Ñuble",
+        "fecha_inicio_utc": "2025-10-07T17:04:00+00:00",
+        "superficie_ha": 0.01,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.11346435546875,
+          -36.67616271972656
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "EL CERRO DE PELLOMENCO Y",
+        "estado": "Extinguido",
+        "comuna": "Angol",
+        "region": "La Araucanía",
+        "fecha_inicio_utc": "2025-10-08T15:27:00+00:00",
+        "superficie_ha": 0.26,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.74666595458984,
+          -37.762779235839844
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "CACIQUE COLIN",
+        "estado": "Extinguido",
+        "comuna": "Lampa",
+        "region": "Metropolitana",
+        "fecha_inicio_utc": "2025-10-08T16:18:00+00:00",
+        "superficie_ha": 0.03,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.84408569335938,
+          -33.26525115966797
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "PASAJE LA CRUZ",
+        "estado": "Extinguido",
+        "comuna": "Buin",
+        "region": "Metropolitana",
+        "fecha_inicio_utc": "2025-10-09T11:26:00+00:00",
+        "superficie_ha": 0.2,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.73535919189453,
+          -33.76505661010742
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "MALVEN",
+        "estado": "Extinguido",
+        "comuna": "Mulchén",
+        "region": "Biobío",
+        "fecha_inicio_utc": "2025-10-09T13:56:00+00:00",
+        "superficie_ha": 4.6,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.43277740478516,
+          -37.62944412231445
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "CUATRO ESQUINAS",
+        "estado": "Extinguido",
+        "comuna": "Hijuelas",
+        "region": "Valparaíso",
+        "fecha_inicio_utc": "2025-10-09T15:37:00+00:00",
+        "superficie_ha": 0.17,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.15511322021484,
+          -32.820945739746094
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "PANULCILLO",
+        "estado": "Extinguido",
+        "comuna": "Ovalle",
+        "region": "Coquimbo",
+        "fecha_inicio_utc": "2025-10-09T15:40:00+00:00",
+        "superficie_ha": 0.5,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.18419647216797,
+          -30.44300079345703
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "EL MOLINO",
+        "estado": "Extinguido",
+        "comuna": "Llay-Llay",
+        "region": "Valparaíso",
+        "fecha_inicio_utc": "2025-10-09T15:45:00+00:00",
+        "superficie_ha": 0.15,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.98194122314453,
+          -32.831668853759766
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "SANTA MARIA 2",
+        "estado": "Extinguido",
+        "comuna": "Nueva Imperial",
+        "region": "La Araucanía",
+        "fecha_inicio_utc": "2025-10-09T15:53:00+00:00",
+        "superficie_ha": 0.5,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.05611419677734,
+          -38.780277252197266
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "LOLEN BAJO",
+        "estado": "Extinguido",
+        "comuna": "Freire",
+        "region": "La Araucanía",
+        "fecha_inicio_utc": "2025-10-09T21:44:00+00:00",
+        "superficie_ha": 0.5,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.73110961914062,
+          -38.97416687011719
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "LA ESPERANZA Y OTROS",
+        "estado": "Controlado",
+        "comuna": "Cholchol",
+        "region": "La Araucanía",
+        "fecha_inicio_utc": "2025-10-10T09:08:00+00:00",
+        "superficie_ha": 0.01,
+        "nivel_alerta": "amarillo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.93333435058594,
+          -38.50972366333008
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "LOS MAITENES",
+        "estado": "Extinguido",
+        "comuna": "San Clemente",
+        "region": "Maule",
+        "fecha_inicio_utc": "2025-10-10T16:42:00+00:00",
+        "superficie_ha": 0.5,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.41555786132812,
+          -35.59388732910156
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "SAN JOSE DE COLICO",
+        "estado": "Extinguido",
+        "comuna": "Curanilahue",
+        "region": "Biobío",
+        "fecha_inicio_utc": "2025-10-10T18:45:00+00:00",
+        "superficie_ha": 0.0,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.33805847167969,
+          -37.37111282348633
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "FUNDO PICARQUIN",
+        "estado": "Extinguido",
+        "comuna": "Mostazal",
+        "region": "O'Higgins",
+        "fecha_inicio_utc": "2025-10-11T14:10:00+00:00",
+        "superficie_ha": 0.02,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.63999938964844,
+          -33.967498779296875
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "CUESTA IDAHUE",
+        "estado": "Extinguido",
+        "comuna": "Coltauco",
+        "region": "O'Higgins",
+        "fecha_inicio_utc": "2025-10-11T15:18:00+00:00",
+        "superficie_ha": 0.02,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.17333221435547,
+          -34.338890075683594
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "SAN RAFAEL",
+        "estado": "Extinguido",
+        "comuna": "Pichidegua",
+        "region": "O'Higgins",
+        "fecha_inicio_utc": "2025-10-11T17:18:00+00:00",
+        "superficie_ha": 3.0,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.44583129882812,
+          -34.272945404052734
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "LA CHIMBA",
+        "estado": "Extinguido",
+        "comuna": "Ovalle",
+        "region": "Coquimbo",
+        "fecha_inicio_utc": "2025-10-11T17:30:00+00:00",
+        "superficie_ha": 0.26,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.2524185180664,
+          -30.63808250427246
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "LA CHIMBA 2",
+        "estado": "Extinguido",
+        "comuna": "Ovalle",
+        "region": "Coquimbo",
+        "fecha_inicio_utc": "2025-10-11T17:30:00+00:00",
+        "superficie_ha": 0.11,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.25555419921875,
+          -30.6385555267334
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "LLOHUE (PARTICULAR)",
+        "estado": "Extinguido",
+        "comuna": "Ninhue",
+        "region": "Ñuble",
+        "fecha_inicio_utc": "2025-10-11T18:56:00+00:00",
+        "superficie_ha": 0.14,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.46138763427734,
+          -36.275001525878906
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "TOTORAL",
+        "estado": "Extinguido",
+        "comuna": "El Quisco",
+        "region": "Valparaíso",
+        "fecha_inicio_utc": "2025-10-12T10:30:00+00:00",
+        "superficie_ha": 0.04,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.66236114501953,
+          -33.406639099121094
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "DIEZ ORIENTE",
+        "estado": "Extinguido",
+        "comuna": "Paine",
+        "region": "Metropolitana",
+        "fecha_inicio_utc": "2025-10-12T11:17:00+00:00",
+        "superficie_ha": 0.2,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.75074768066406,
+          -33.8120002746582
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "LAS PALMAS",
+        "estado": "Extinguido",
+        "comuna": "Chépica",
+        "region": "O'Higgins",
+        "fecha_inicio_utc": "2025-10-12T15:35:00+00:00",
+        "superficie_ha": 1.2,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.4647216796875,
+          -34.848609924316406
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "LA ESPERANZA DE MALVEN",
+        "estado": "Controlado",
+        "comuna": "Mulchén",
+        "region": "Biobío",
+        "fecha_inicio_utc": "2025-10-12T19:44:00+00:00",
+        "superficie_ha": 3.12,
+        "nivel_alerta": "amarillo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.38249969482422,
+          -37.66694259643555
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "AR, EL",
+        "estado": "Extinguido",
+        "comuna": "Lebu",
+        "region": "Biobío",
+        "fecha_inicio_utc": "2025-10-12T20:28:00+00:00",
+        "superficie_ha": 0.1,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.6272201538086,
+          -37.64083480834961
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "VIADUCTO MALLECO",
+        "estado": "Extinguido",
+        "comuna": "Collipulli",
+        "region": "La Araucanía",
+        "fecha_inicio_utc": "2025-10-13T13:20:00+00:00",
+        "superficie_ha": 0.05,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.4383316040039,
+          -37.961387634277344
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "SANTA LUISA",
+        "estado": "Extinguido",
+        "comuna": "Quilicura",
+        "region": "Metropolitana",
+        "fecha_inicio_utc": "2025-10-13T17:00:00+00:00",
+        "superficie_ha": 1.6,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.72663879394531,
+          -33.341583251953125
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "LO ALFREDO PORCION 1 Y 2",
+        "estado": "Extinguido",
+        "comuna": "Los Angeles",
+        "region": "Biobío",
+        "fecha_inicio_utc": "2025-10-13T19:35:00+00:00",
+        "superficie_ha": 0.22,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.5875015258789,
+          -37.40194320678711
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "SAN JOAQUIN DE LOS MAYOS",
+        "estado": "Extinguido",
+        "comuna": "Machalí",
+        "region": "O'Higgins",
+        "fecha_inicio_utc": "2025-10-14T10:08:00+00:00",
+        "superficie_ha": 0.05,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.70996856689453,
+          -34.19180679321289
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "PILPILCO ABAJO",
+        "estado": "Extinguido",
+        "comuna": "Los Alamos",
+        "region": "Biobío",
+        "fecha_inicio_utc": "2025-10-14T19:11:00+00:00",
+        "superficie_ha": 0.03,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.3822250366211,
+          -37.60472106933594
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "COYANCO ALTO",
+        "estado": "Extinguido",
+        "comuna": "Quillón",
+        "region": "Ñuble",
+        "fecha_inicio_utc": "2025-10-14T23:24:00+00:00",
+        "superficie_ha": 0.03,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.51860809326172,
+          -36.733612060546875
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "VALENTIN LETELIER",
+        "estado": "Extinguido",
+        "comuna": "Villa Alemana",
+        "region": "Valparaíso",
+        "fecha_inicio_utc": "2025-10-15T14:05:00+00:00",
+        "superficie_ha": 0.09,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.35678100585938,
+          -33.03438949584961
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo_amenaza": "incendio_forestal",
+        "fuente": "CONAF (GitHub)",
+        "titulo": "LAS MERCEDES",
+        "estado": "Extinguido",
+        "comuna": "Lampa",
+        "region": "Metropolitana",
+        "fecha_inicio_utc": "2025-10-15T16:47:00+00:00",
+        "superficie_ha": 0.1,
+        "nivel_alerta": "verde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.92805480957031,
+          -33.237220764160156
+        ]
+      }
+    }
+  ]
+}
