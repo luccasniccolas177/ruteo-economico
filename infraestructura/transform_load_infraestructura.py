@@ -1,5 +1,6 @@
 import subprocess
 import os
+import sys
 import psycopg2
 from dotenv import load_dotenv
 
@@ -47,32 +48,29 @@ class InfraestructuraLoader:
 
     def create_pgrouting_topology(self):
         print("-> [Paso 2/2] Creando la topología para pgRouting...")
-        sql = """
-              ALTER TABLE planet_osm_line \
-                  ADD COLUMN IF NOT EXISTS "source" INTEGER;
-              ALTER TABLE planet_osm_line \
-                  ADD COLUMN IF NOT EXISTS "target" INTEGER;
-              ALTER TABLE planet_osm_line \
-                  ADD COLUMN IF NOT EXISTS "cost" DOUBLE PRECISION;
-              ALTER TABLE planet_osm_line \
-                  ADD COLUMN IF NOT EXISTS "reverse_cost" DOUBLE PRECISION;
-              UPDATE planet_osm_line \
-              SET cost = ST_Length(ST_Transform(way, 4326)::geography);
-              UPDATE planet_osm_line \
-              SET reverse_cost = cost;
-              UPDATE planet_osm_line \
-              SET reverse_cost = -1 \
-              WHERE oneway = 'yes';
-              SELECT pgr_createTopology('planet_osm_line', 0.00001, 'way', 'osm_id');
-              CREATE INDEX IF NOT EXISTS source_idx ON planet_osm_line("source");
-              CREATE INDEX IF NOT EXISTS target_idx ON planet_osm_line("target");
-              CREATE INDEX IF NOT EXISTS way_idx ON planet_osm_line USING GIST (way); \
-              """
+
+        # --- MEJORA: Comandos separados para un mejor control de errores ---
+        sql_commands = [
+            'ALTER TABLE planet_osm_line ADD COLUMN IF NOT EXISTS "source" INTEGER;',
+            'ALTER TABLE planet_osm_line ADD COLUMN IF NOT EXISTS "target" INTEGER;',
+            'ALTER TABLE planet_osm_line ADD COLUMN IF NOT EXISTS "cost" DOUBLE PRECISION;',
+            'ALTER TABLE planet_osm_line ADD COLUMN IF NOT EXISTS "reverse_cost" DOUBLE PRECISION;',
+            'UPDATE planet_osm_line SET cost = ST_Length(ST_Transform(way, 4326)::geography);',
+            'UPDATE planet_osm_line SET reverse_cost = cost;',
+            "UPDATE planet_osm_line SET reverse_cost = -1 WHERE oneway = 'yes';",
+            "SELECT pgr_createTopology('planet_osm_line', 0.00001, 'way', 'osm_id');",
+            'CREATE INDEX IF NOT EXISTS source_idx ON planet_osm_line("source");',
+            'CREATE INDEX IF NOT EXISTS target_idx ON planet_osm_line("target");',
+            'CREATE INDEX IF NOT EXISTS way_idx ON planet_osm_line USING GIST (way);'
+        ]
+
         try:
             with psycopg2.connect(**self.db_config) as conn:
-                conn.autocommit = True
                 with conn.cursor() as cur:
-                    cur.execute(sql)
+                    for i, command in enumerate(sql_commands):
+                        print(f"   -> Ejecutando SQL {i + 1}/{len(sql_commands)}...")
+                        cur.execute(command)
+
             print("   -> ¡Topología de ruteo creada exitosamente!")
             return True
         except psycopg2.Error as e:
@@ -80,13 +78,20 @@ class InfraestructuraLoader:
             return False
 
     def ejecutar(self):
+        """Orquesta la carga de infraestructura, deteniéndose si un paso falla."""
         if not os.path.exists(self.pbf_file):
             print(f"ERROR: El archivo '{self.pbf_file}' no existe. Ejecuta 'extract_infraestructura.py' primero.")
-            return
+            return False
+
         if self.run_osm2pgsql():
-            self.create_pgrouting_topology()
+            if self.create_pgrouting_topology():
+                return True
+        return False
 
 
 if __name__ == "__main__":
     loader = InfraestructuraLoader()
-    loader.ejecutar()
+    # --- MEJORA: Salir con código de error si la ejecución falla ---
+    if not loader.ejecutar():
+        # Esto le dice a main.py que algo salió mal.
+        sys.exit(1)
