@@ -1,0 +1,14 @@
+Reporte de Enriquecimiento de Peajes
+===================================
+Total peajes georreferenciados: 212
+Peajes con tarifas asignadas: 206
+Peajes sin match: 6
+Cobertura (geo -> precios): 97.17%
+
+Listado de peajes sin match (OBJECTID, nombre, tipo, concesionaria, tramo):
+- 20 | El Monte | Lateral | Autopista Santiago - San Antonio | Santiago - San Antonio
+- 21 | El Monte | Lateral | Autopista Santiago - San Antonio | Santiago - San Antonio
+- 117 | Colón | Troncal | Ruta Interportuaria Talcahuano-Penco por Isla Rocuant | Ruta Interportuaria
+- 173 | Alessandri | Troncal | Ruta Interportuaria | RUTA 154 - Aeropuerto Carriel Sur
+- 174 | Chaimávida | Troncal | Peaje Fiscal Ruta 148 | Bulnes - Concepción
+- 175 | Las Raíces | Troncal | Peaje Fiscal Ruta 181 Ch | Túnel Las Raíces - Paso Pino Hachado
