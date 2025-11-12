@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visor de Peajes y Bencineras (En Vivo)</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <style>
+        body, html { height: 100%; margin: 0; padding: 0; font-family: sans-serif; }
+        #map { height: 100%; width: 100%; }
+        .leaflet-popup-content b { font-size: 1.1em; }
+        .leaflet-popup-content p { margin: 4px 0; }
+    </style>
+</head>
+<body>
+
+    <div id="map"></div>
+
+    <script>
+        // --- 1. CONFIGURACIÓN DEL MAPA ---
+
+        const map = L.map('map').setView([-38.4161, -72.0], 5); // Centro de Chile
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+        }).addTo(map);
+
+        const peajesLayerGroup = L.layerGroup().addTo(map);
+        const bencinerasLayerGroup = L.layerGroup().addTo(map);
+
+        // --- 2. FUNCIONES PARA CARGAR DATOS DESDE LA API ---
+
+        /**
+         * Función para cargar y mostrar los Peajes desde la API de Flask
+         */
+        async function loadPeajes() {
+            try {
+                // ¡CAMBIO CLAVE! Apuntamos a nuestra API de Flask
+                const response = await fetch('http://127.0.0.1:5000/api/peajes');
+
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const data = await response.json();
+                console.log("Peajes cargados desde la API", data);
+
+                L.geoJSON(data, {
+                    onEachFeature: (feature, layer) => {
+                        const props = feature.properties;
+                        let popupContent = `<b>${props.nombre || 'Peaje'}</b>`;
+                        if (props.tipo) popupContent += `<p><b>Tipo:</b> ${props.tipo}</p>`;
+                        if (props.concesionaria) popupContent += `<p><b>Concesión:</b> ${props.concesionaria}</p>`;
+                        layer.bindPopup(popupContent);
+                    }
+                }).addTo(peajesLayerGroup);
+
+            } catch (error) {
+                console.error("Error al cargar Peajes:", error);
+                alert("No se pudieron cargar los peajes. ¿El servidor backend (app.py) está corriendo?");
+            }
+        }
+
+        /**
+         * Función para cargar y mostrar las Bencineras desde la API de Flask
+         */
+        async function loadBencineras() {
+            try {
+                // ¡CAMBIO CLAVE! Apuntamos a nuestra API de Flask
+                const response = await fetch('http://127.0.0.1:5000/api/bencineras');
+
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const data = await response.json();
+                console.log("Bencineras cargadas desde la API", data);
+
+                L.geoJSON(data, {
+                    pointToLayer: (feature, latlng) => {
+                        return L.circleMarker(latlng, {
+                            radius: 6, fillColor: "#28a745", color: "#000",
+                            weight: 1, opacity: 1, fillOpacity: 0.8
+                        });
+                    },
+                    onEachFeature: (feature, layer) => {
+                        const props = feature.properties;
+                        let popupContent = `<b>${props.nombre || 'Bencinera'}</b>`;
+                        if (props.marca) popupContent += `<p><b>Marca:</b> ${props.marca}</p>`;
+                        if (props.direccion) popupContent += `<p><b>Dirección:</b> ${props.direccion}</p>`;
+
+                        const formatPrice = (price) => price ? `$${parseInt(price).toLocaleString('es-CL')}` : 'No inf.';
+
+                        popupContent += `<hr style="margin: 5px 0;">
+                                         <p><b>93:</b> ${formatPrice(props.precio_gasolina_93)}</p>
+                                         <p><b>95:</b> ${formatPrice(props.precio_gasolina_95)}</p>
+                                         <p><b>97:</b> ${formatPrice(props.precio_gasolina_97)}</p>
+                                         <p><b>Diesel:</b> ${formatPrice(props.precio_diesel)}</p>`;
+
+                        layer.bindPopup(popupContent, { maxWidth: 250 });
+                    }
+                }).addTo(bencinerasLayerGroup);
+
+            } catch (error) {
+                console.error("Error al cargar Bencineras:", error);
+                alert("No se pudieron cargar las bencineras. ¿El servidor backend (app.py) está corriendo?");
+            }
+        }
+
+        // --- 3. CONTROL DE CAPAS Y EJECUCIÓN ---
+
+        const overlayLayers = {
+            "Peajes": peajesLayerGroup,
+            "Bencineras": bencinerasLayerGroup
+        };
+        L.control.layers(null, overlayLayers, { position: 'topright' }).addTo(map);
+
+        // Cargar los datos al iniciar
+        loadPeajes();
+        loadBencineras();
+    </script>
+
+</body>
+</html>
