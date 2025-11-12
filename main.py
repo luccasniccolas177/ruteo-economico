@@ -7,7 +7,7 @@ ETL_PIPELINE = [
     ("infraestructura/extract_infraestructura.py", "Descargando mapa de Chile desde Geofabrik"),
     ("infraestructura/transform_load_infraestructura.py", "Procesando y cargando infraestructura a la BD"),
     # --- METADATA ---
-    ("metadata/vehiculos/scraper-chileautos.py", "Extrayendo datos de vehículos (Scraping)"),
+    ("metadata/vehiculos/extract_vehiculos.py", "Extrayendo datos de vehículos (Scraping)"),
     ("metadata/vehiculos/transform_vehiculos.py", "Transformando datos de vehículos"),
     ("metadata/vehiculos/load_vehiculos.py", "Cargando vehículos a la BD"),
     ("metadata/combustible/extract_combustible.py", "Extrayendo datos crudos de combustibles"),

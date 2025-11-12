@@ -6,8 +6,9 @@ from dotenv import load_dotenv
 
 class CargadorPeajes:
     """
-    Carga los datos transformados de peajes desde el JSON limpio
+    Carga la metadata de peajes desde un archivo JSON enriquecido
     a las tablas 'peajes' y 'tarifas_peaje' en PostgreSQL.
+    También vincula cada peaje a su nodo más cercano en la red vial (nearest_node_id).
     """
 
     def __init__(self):
@@ -21,80 +22,95 @@ class CargadorPeajes:
             "host": os.getenv("DB_HOST", "localhost"),
             "port": os.getenv("DB_PORT", "5432")
         }
-        if not all(self.db_config.values()):
-            raise ValueError("Faltan variables de BD en el archivo .env.")
 
     def ejecutar_carga(self):
-        print("--- Iniciando Proceso de Carga de Datos de Peajes ---")
+        print("🚧 Iniciando carga de peajes...")
 
-        json_path = os.path.join(self.script_dir, 'transformed_peajes.json')
+        json_path = os.path.join(self.script_dir, "peajes_enriquecidos.json")
         if not os.path.exists(json_path):
-            print(
-                f"Error: No se encontró el archivo 'transformed_peajes.json'. Ejecuta el script de transformación primero.")
+            print(f"❌ No se encontró el archivo: {json_path}")
             return
 
-        print(f"Cargando datos desde: {os.path.basename(json_path)}")
+        with open(json_path, "r", encoding="utf-8") as f:
+            peajes_data = json.load(f)
 
-        try:
-            with open(json_path, 'r', encoding='utf-8') as f:
-                data = json.load(f)
-        except (json.JSONDecodeError, IOError) as e:
-            print(f"Error al leer el archivo JSON: {e}")
-            return
-
+        conn = None
         try:
             with psycopg2.connect(**self.db_config) as conn:
                 with conn.cursor() as cur:
-                    print("Conexión a la base de datos establecida exitosamente.")
-
-                    print("Vaciando tablas de peajes existentes...")
+                    print("✅ Conexión establecida con la base de datos.")
                     cur.execute("TRUNCATE TABLE tarifas_peaje, peajes RESTART IDENTITY CASCADE;")
 
-                    peajes_insertados = 0
-                    tarifas_insertadas = 0
+                    sql_peaje = """
+                        INSERT INTO peajes (objectid, globalid, nombre, tipo, concesionaria, tramo,
+                                            latitud, longitud, geom)
+                        VALUES (%s, %s, %s, %s, %s, %s,
+                                %s, %s, ST_SetSRID(ST_MakePoint(%s, %s), 4326))
+                        RETURNING id;
+                    """
 
-                    for peaje in data:
-                        # Insertar en la tabla 'peajes'
-                        cur.execute(
-                            """
-                            INSERT INTO peajes (nombre, concesionaria, tipo, ubicacion)
-                            VALUES (%s, %s, %s, ST_SetSRID(ST_MakePoint(%s, %s), 4326)) RETURNING id;
-                            """,
-                            (
-                                peaje.get('nombre'), peaje.get('concesionaria'), peaje.get('tipo'),
-                                peaje.get('longitud'), peaje.get('latitud')
-                            )
-                        )
-                        peaje_id_db = cur.fetchone()[0]
-                        peajes_insertados += 1
+                    sql_tarifa = """
+                        INSERT INTO tarifas_peaje (peaje_id, categoria_vehiculo, tipo_tarifa, precio)
+                        VALUES (%s, %s, %s, %s);
+                    """
 
-                        # Insertar tarifas asociadas
-                        for tarifa in peaje.get('tarifas', []):
-                            cur.execute(
-                                """
-                                INSERT INTO tarifas_peaje (peaje_id, categoria_vehiculo, tipo_tarifa, precio)
-                                VALUES (%s, %s, %s, %s);
-                                """,
-                                (
-                                    peaje_id_db,
-                                    tarifa.get('categoria_vehiculo'),
-                                    tarifa.get('tipo_tarifa'),
-                                    tarifa.get('precio')
-                                )
-                            )
-                            tarifas_insertadas += 1
+                    peajes_count, tarifas_count = 0, 0
+                    for p in peajes_data:
+                        cur.execute(sql_peaje, (
+                            p.get("OBJECTID"),
+                            p.get("globalid", "").strip("{}"),
+                            p.get("nombre"),
+                            p.get("tipo"),
+                            p.get("concesionaria"),
+                            p.get("tramo"),
+                            p.get("latitud"),
+                            p.get("longitud"),
+                            p.get("longitud"),
+                            p.get("latitud")
+                        ))
+                        peaje_id = cur.fetchone()[0]
+                        peajes_count += 1
 
-                    print(f"\n¡Carga completada!")
-                    print(f"  -> Se insertaron {peajes_insertados} peajes.")
-                    print(f"  -> Se insertaron {tarifas_insertadas} tarifas.")
+                        for tarifa in p.get("tarifas", []):
+                            cur.execute(sql_tarifa, (
+                                peaje_id,
+                                tarifa.get("categoria_vehiculo"),
+                                tarifa.get("tipo_tarifa"),
+                                tarifa.get("precio")
+                            ))
+                            tarifas_count += 1
 
-        except psycopg2.Error as e:
-            print(f"\nError de base de datos durante la carga: {e}")
-            if conn: conn.rollback()
+                    print(f"✅ Insertados {peajes_count} peajes y {tarifas_count} tarifas.")
+
+                    # --- Asociar peajes al grafo vial ---
+                    print("🔄 Calculando nearest_node_id para cada peaje...")
+                    cur.execute("""
+                        UPDATE peajes AS p
+                        SET nearest_node_id = nn.node
+                        FROM (
+                            SELECT p2.id,
+                                   (
+                                       SELECT source
+                                       FROM chile_2po_4pgr
+                                       ORDER BY geom_way <-> p2.geom
+                                       LIMIT 1
+                                   ) AS node
+                            FROM peajes AS p2
+                        ) AS nn
+                        WHERE nn.id = p.id;
+                    """)
+                    conn.commit()
+                    print("✅ Nodos cercanos actualizados correctamente.")
+
         except Exception as e:
-            print(f"\nOcurrió un error inesperado: {e}")
+            print(f"❌ Error durante la carga: {e}")
+            if conn:
+                conn.rollback()
+        finally:
+            if conn:
+                conn.close()
+                print("🔌 Conexión cerrada.")
 
 
 if __name__ == "__main__":
-    cargador = CargadorPeajes()
-    cargador.ejecutar_carga()
+    CargadorPeajes().ejecutar_carga()
